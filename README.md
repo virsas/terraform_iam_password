@@ -10,7 +10,7 @@ None
 
 ``` terraform
 #################
-#
+# variable
 #################
 variable "default_password_policy" { 
   default = { 
@@ -29,6 +29,9 @@ variable "default_password_policy" {
   } 
 }
 
+#################
+# module
+#################
 module "default_password_policy" {
   source   = "github.com/virsas/terraform_iam_password"
   region   = "eu-west-1"
