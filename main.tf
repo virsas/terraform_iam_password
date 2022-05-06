@@ -9,4 +9,7 @@ resource "aws_iam_account_password_policy" "policy" {
   require_lowercase_characters   = var.settings.lower
   require_uppercase_characters   = var.settings.upper
   minimum_password_length        = var.settings.length
+  max_password_age               = var.settings.age 
+  expire_passwords               = var.settings.expire 
+  password_reuse_prevention      = var.settings.reuse
 }
