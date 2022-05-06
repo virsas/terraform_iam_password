@@ -26,8 +26,8 @@ variable "default_password_policy" {
     upper           = true
     # require minimal length of the iam users' password
     length          = 14
-    # prevent reuse of passwords
-    reuse           = false
+    # number of new passwords before user is allowed to use same password as before, 0 disables this
+    reuse           = 0
     # max password age in days, 0 disable expiration
     age             = 0
   } 
