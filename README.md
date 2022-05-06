@@ -28,10 +28,8 @@ variable "default_password_policy" {
     length          = 14
     # prevent reuse of passwords
     reuse           = false
-    # max password age in days
+    # max password age in days, 0 disable expiration
     age             = 0
-    # if password should expire after age is exceeded
-    expire          = false
   } 
 }
 
